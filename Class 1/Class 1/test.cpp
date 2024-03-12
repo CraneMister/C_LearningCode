@@ -9,7 +9,7 @@ int main()
 
     float change = 100 - price;
 
-    printf("ÕÒÄú%fÔª¡£\n", change);
+    printf("ÕÒÄú%0.2fÔª¡£\n", change);
 
     return 0;
 }
