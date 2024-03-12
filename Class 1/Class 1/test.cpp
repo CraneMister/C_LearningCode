@@ -2,14 +2,5 @@
 
 int main()
 {
-    float price = 0;
-
-    printf("请输入金额（元）：");
-    scanf_s("%f", &price);
-
-    float change = 100 - price;
-
-    printf("找您%0.2f元。\n", change);
-
-    return 0;
+	printf("Hello World!");
 }
