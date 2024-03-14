@@ -27,8 +27,8 @@ F:\Code\C_LearningCode\Class 1\Class 1\test.cpp(19,9): warning C4477: “printf�
   F:\Code\C_LearningCode\Class 1\Class 1\test.cpp(19,9):
   请考虑在格式字符串中使用“%zd”
   
-F:\Code\C_LearningCode\Class 1\Class 1\test.cpp(59,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-  F:\Code\C_LearningCode\Class 1\Class 1\test.cpp(59,9):
+F:\Code\C_LearningCode\Class 1\Class 1\test.cpp(62,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+  F:\Code\C_LearningCode\Class 1\Class 1\test.cpp(62,9):
   请考虑在格式字符串中使用“%zd”
   
   Class 1.vcxproj -> F:\Code\C_LearningCode\Class 1\x64\Debug\Class 1.exe

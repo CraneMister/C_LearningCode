@@ -36,8 +36,10 @@ int main(){
 	printf("%d\n", sum);
 
 	const int c_num = 10;    //1.字面常量，如1.5      2.常变量,如c_num,定义时用const,本质是只读变量,被const修饰后不能改变        
-#define NUM 10               //3.标识符常量,用#define定义,只是简单的字符替换
-	int aaa = NUM;           
+#define NUM 10               //3.标识符常量,用#define定义,只是简单的字符替换,相当于常量
+	int aaa = NUM; 
+	char ttt[NUM] = "add";
+	printf("%s\n", ttt);
 	printf("%d\n%d\n", c_num,aaa);
 	enum SEX                 //4.枚举常量,其值从0开始(也可从初始枚举常量赋初值),如MALE
 	{
@@ -57,7 +59,7 @@ int main(){
 	char arr3[] = "abc\0";          //结尾的\0仍会存储在数组中，也就是说储存两次\0，但是打印或计算时，第一个\0也不算内容，只会打印abc
  	printf("%s\n", arr1);
 	printf("%s\n", arr2);
-	printf("%d\n",strlen(arr1));     //strlen计算字符串长度，\0结束符不算入字符串内容，但在建立数组时要留出结束符的空间
+	printf("%d\n",strlen(arr1));     //strlen计算字符串长度，\0结束符不算入字符串内容，但结束符算在数组元素个数里，故在建立数组时要留出结束符的空间
 }
 
 
