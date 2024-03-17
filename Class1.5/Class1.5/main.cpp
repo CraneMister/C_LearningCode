@@ -126,6 +126,27 @@ int main()
 
 #define ADD(x,y) ((x)+(y))           //define定义宏，将一个符号用规定的操作替换（define是直接替换，应注意算法加上括号，防止出错）
 	printf("%d\n", ADD(1, 2));
+
+	//一个内存单元是一个字节
+	int mmm = 10;    //在内存中要分配4个内存单元
+	printf("%p\n", &mmm);         //%p 用来打印地址
+	int *pm = &mmm;       //指针变量,用来存储地址，例如pm（前面的类型表示指向对象的数据类型）（存储的只是首个内存空间的地址）
+	printf("%d\n", *pm);      //解引用，通过该地址找到对应的数据，例如*pm
+	printf("%d\n", sizeof(int*));       //指针需要多大的空间取决于地址的存储需要多大空间，例如32位需要4字节，64位需要8字节
+
+	//结构体创建新的类型
+	struct Stu
+	{
+		char name[20];
+		int age;
+		double score;
+	 };
+	struct Stu s = { "Whl",18,98.5 };     //结构体初始化
+	struct Stu* ps = &s;       //结构体指针
+	printf("%s", s.name);      
+	printf("%d", (*ps).age);
+	printf("%lf", ps->score);
+
 	return 0;
 }
 

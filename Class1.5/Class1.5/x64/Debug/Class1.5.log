@@ -11,4 +11,8 @@ F:\Code\C_LearningCode\Class1.5\Class1.5\main.cpp(58,9): warning C4477: “print
   F:\Code\C_LearningCode\Class1.5\Class1.5\main.cpp(58,9):
   请考虑在格式字符串中使用“%I64d”
   
+F:\Code\C_LearningCode\Class1.5\Class1.5\main.cpp(135,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+  F:\Code\C_LearningCode\Class1.5\Class1.5\main.cpp(135,9):
+  请考虑在格式字符串中使用“%zd”
+  
   Class1.5.vcxproj -> F:\Code\C_LearningCode\Class1.5\x64\Debug\Class1.5.exe
