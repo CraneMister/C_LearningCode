@@ -143,9 +143,9 @@ int main()
 	 };
 	struct Stu s = { "Whl",18,98.5 };     //结构体初始化
 	struct Stu* ps = &s;       //结构体指针
-	printf("%s", s.name);      
-	printf("%d", (*ps).age);
-	printf("%lf", ps->score);
+	printf(" 姓名：%s", s.name);         //结构体.成员
+	printf("年龄：%d", (*ps).age);      //(结构体指针*).成员
+	printf("成绩：%lf", ps->score);     //结构体指针->成员
 
 	return 0;
 }

@@ -10,13 +10,14 @@ int main(){
 	printf("Hello World!\n");
 
 //sizeof 计算类型或变量所占空间的大小(字节)
-	printf("%d\n", sizeof(int));        
-	printf("%d\n", sizeof(long));
-	printf("%d\n", sizeof(long long));
-	printf("%d\n", sizeof(short));
-	printf("%d\n", sizeof(char));
-	printf("%d\n", sizeof(float));
-	printf("%d\n", sizeof(double));
+	printf("%d\n", sizeof(int));              //4字节，32位二进制（整型取值范围在[-2147483648，2147483648]，无符号长整型取值范围在 [0，4294967259]）
+	printf("%d\n", sizeof(long));             //4字节，表示区间同int（但是在16位系统中int占2字节，long占4字节）
+	printf("%d\n", sizeof(long long));        //8字节，64位二进制
+	printf("%d\n", sizeof(short));            //2字节，16位二进制
+	printf("%d\n", sizeof(char));             //1字节
+	printf("%d\n", sizeof(float));            //4字节
+	printf("%d\n", sizeof(double));           //8字节
+	//合理选择类型，可以提高空间利用率（各整型所占字节大小不同，所能表示的数字区间也不同）
 
 	const char name[4] = "whl";
 	int age = 18;        //类型 变量名（推荐变量赋初值）
